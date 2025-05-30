@@ -22,11 +22,12 @@ class App extends React.Component {
         console.log('Komponent został zamontowany');
     }
 
-     componentDidUpdate() {
+    componentDidUpdate() {
         console.log('Komponent został zaktualizowany');
     }
 
     componentWillUnmount() {
+        clearInterval( this.id )
         console.log('Komponent został usuniety z DOM');
     } 
 }
