@@ -13,6 +13,14 @@ class App extends React.Component {
 
         return <h1>{ this.state.counter }</h1>
     }
+
+    componentDidMount() {
+        console.log('Komponent został zamontowany');
+    }
+
+    componentDidUpdate() {
+        console.log('Komponent został zaktualizowany');
+    }
 }
 
 root.render(<App/>);
