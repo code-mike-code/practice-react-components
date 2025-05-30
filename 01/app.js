@@ -15,6 +15,10 @@ class App extends React.Component {
     }
 
     componentDidMount() {
+        this.id = setInterval(() => {
+            const {counter} = this.state
+            this.setState({ counter: counter + 1 })
+        }, 5000)
         console.log('Komponent został zamontowany');
     }
 
