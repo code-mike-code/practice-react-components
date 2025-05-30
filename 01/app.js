@@ -4,8 +4,9 @@ import { createRoot } from 'react-dom/client';
 const root = createRoot(document.querySelector('#root'));
 
 class App extends React.Component {
-    state = {
-        counter: 0,
+    constructor(props) {
+        super(props)
+        this.state = { counter: 0 }
     }
     render() {
         console.log('render');
