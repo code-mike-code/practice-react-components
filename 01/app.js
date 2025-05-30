@@ -21,6 +21,10 @@ class App extends React.Component {
      componentDidUpdate() {
         console.log('Komponent został zaktualizowany');
     }
+
+    componentWillUnmount() {
+        console.log('Komponent został usuniety z DOM');
+    } 
 }
 
 root.render(<App/>);
