@@ -40,6 +40,7 @@ class Article extends React.Component {
                                     name="content" 
                                     value={currentComment}
                                     onChange={this.handleTextareaChange}
+                                    placeholder='dodaj komentarz'
                                 />
                             </label>
                         </div>
